@@ -3,10 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manage</title>
     <link rel="stylesheet" href="style/output.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <h1 class="text-5xl text-violet-600">Welcome to taileind css</h1>
+
+    <div class=" mx-auto p-6  container ">
+    <!---------------Navbar------------------>
+    <nav class="relative" >
+        <div class="flex items-center justify-between">
+
+            <!--Logo-->
+              <div>
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+              </div>  
+
+        <!--Menu items-->
+        <div class="hidden md:flex space-x-5 text-1xl ">
+                <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+                <a href="#"class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#"class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#"class="hover:text-darkGrayishBlue">About us</a>
+                <a href="#"class="hover:text-darkGrayishBlue">Careers</a>
+                <a href="#"class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+
+        <!--Buttons-->
+        <div class="hidden md:flex space-x-2 ">
+
+      <a href="#"
+      class="bg-brightRed rounded-full p-3 px-6 text-white
+      hover:bg-red-600 hover:text-white shadow-lg">Sign up</a>
+      
+      
+      <a href="#"
+      class="bg-white rounded-full p-3 px-6 text-darkGrayishBlue
+      hover:bg-red-600 shadow-lg">Sign in</a>
+    </div>
+
+    </div>
+    </nav>
+
+    <!-----------------------Hero section------------------->
+    <section class=" flex flex-col justify-between md:flex-row items-center mt-10 ">
+        <!--Intro----->
+        <div class="flex flex-col space-y-12 items-start md:w-1/2">
+            
+            <h1 class="max-w-md text-3xl font-bold md:text-5xl  ">Bring everyone toghether to build better producs</h1>
+
+            <p class="opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero quos expedita repellendus ullam ea, quia voluptas earum, ipsum sint laborum nemo quod illum architecto alias, saepe veritatis illo! Quia?</p>
+
+            <a href="#" class="bg-brightRed rounded-full text-white p-3 px-6 hover:bg-red-600 "> Get started</a>
+        </div>
+
+        <!--0Hero Img---->
+        <img src="img/illustration-intro.svg" alt="" class="  md:w-1/2" >
+
+</section>
+
+<!----------------=======Showcase------------------->
+<section class="flex flex-col justify-between my-16   md:flex-row">
+    
+    <!---Intro-->
+    <div class="block space-y-10 flex-1 mb-10 md:mr-10">
+        <p class="text-4xl font-bold md:text-3xl">What's diffrent about manage?</p>
+
+        <p class="opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magni illum voluptates inventore sit tenetur non, ex quasi mollitia fuga in soluta minima voluptate dolor rem placeat veniam? Repellat, laborum?</p>
+    </div>
+
+    <!----list----->
+    <div class="block flex-1 my-10 md:ml-10 mt-0">
+
+        <div class="flex items-baseline">
+            
+            <a href="#" class="bg-brightRed rounded-full mr-5 p-1 px-4 text-white">01</a>
+
+            <div>
+                <p class="text-1xl font-bold ">Track company wide-progress</p>
+
+                <p class="opacity-60 my-5 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus atque non deleniti, sequi veritatis eius! Id explicabo fugit</p>
+
+            </div>
+         </div>
+
+         <div class="flex items-baseline">
+            
+            <a href="#" class="bg-brightRed rounded-full mr-5 p-1 px-4 text-white">02</a>
+
+            <div>
+                <p class="text-1xl font-bold ">Advanced built-in reports</p>
+
+                <p class="opacity-60 my-5 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus atque non deleniti, sequi veritatis eius! Id explicabo fugit</p>
+
+            </div>
+         </div>
+
+         <div class="flex items-baseline">
+            
+            <a href="#" class="bg-brightRed rounded-full mr-5 p-1 px-4 text-white">03</a>
+
+            <div>
+                <p class="text-1xl font-bold ">Track company wide-progress</p>
+
+                <p class="opacity-60 my-5 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus atque non deleniti, sequi veritatis eius! Id explicabo fugit</p>
+
+            </div>
+         </div>
+
+         <div class="flex items-baseline">
+            
+            <a href="#" class="bg-brightRed rounded-full mr-5 p-1 px-4 text-white">01</a>
+
+            <div>
+                <p class="text-1xl font-bold ">Advanced Acess for better management</p>
+
+                <p class="opacity-60 my-5 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus atque non deleniti, sequi veritatis eius! Id explicabo fugit</p>
+
+            </div>
+         </div>
+
+    </div>
+    
+</section>
+
+<!----------------------Testimony-->
+<section class="flex flex-col items-center" >
+    <!--intro-->
+    <p class="text-5xl  my-12 font-bold" >What people say about Manage!  </p>
+
+    <!-- reviews -->
+    <div class="flex flex-col my-12 justify-between md:flex-row">
+
+    <!-- Users -->
+    <div class="flex flex-col items-center space-y-7 ">
+
+        <!--  img -->
+        <img src="img/avatar-ali.png" width="70px" height="70px" alt="" class="rounded-full">
+
+        <!-- name -->
+        <p class="font-bold" > Usman Click </p>
+
+        <!-- Comment -->
+        <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nemo quod aperiam consequatur minus tenetur. A ut corrupti repudiandae assumenda </p>
+
+    </div>
+
+    <div class=" hidden md:flex flex-col items-center space-y-7">
+
+         <!--  img -->
+         <img src="img/avatar-ali.png" width="70px" height="70px" alt="" class="rounded-full">
+
+         <!-- name -->
+         <p class="font-bold" > Usman Click </p>
+ 
+         <!-- Comment -->
+         <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nemo quod aperiam consequatur minus tenetur. A ut corrupti repudiandae assumenda </p>
+
+    </div>
+
+    <div class=" hidden md:flex flex-col items-center space-y-7">
+
+       <!--  img -->
+       <img src="img/avatar-ali.png" width="70px" height="70px" alt="" class="rounded-full">
+
+       <!-- name -->
+       <p class="font-bold" > Usman Click </p>
+
+       <!-- Comment -->
+       <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nemo quod aperiam consequatur minus tenetur. A ut corrupti repudiandae assumenda </p>
+
+    </div>
+
+</div>
+
+
+    <!-- Read more btn -->
+    <a href="#" class="bg-brightRed rounded-full text-white hover:bg-red-600 p-3 px-6" >Read more</a>
+
+</section>
+</div>
 </body>
 </html> 
