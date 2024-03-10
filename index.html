@@ -9,10 +9,15 @@
 </head>
 <body>
 
-    <div class=" mx-auto p-6  container ">
+    <div class=" mx-auto container relative ">
+        <!-- Bg img -->
+        <div class="flex justify-end">
+            <img src="img/bg-tablet-pattern.svg" alt="" class="absolute top-[-24pc] ">
+
+        </div>
     <!---------------Navbar------------------>
-    <nav class="relative" >
-        <div class="flex items-center justify-between">
+    <nav class="relative py-6" >
+        <div class="flex items-center justify-between"> 
 
             <!--Logo-->
               <div>
@@ -34,19 +39,19 @@
 
       <a href="#"
       class="bg-brightRed rounded-full p-3 px-6 text-white
-      hover:bg-red-600 hover:text-white shadow-lg">Sign up</a>
+      hover:bg-red-600">Sign up</a>
       
       
       <a href="#"
       class="bg-white rounded-full p-3 px-6 text-darkGrayishBlue
-      hover:bg-red-600 shadow-lg">Sign in</a>
+      hover:bg-red-600 hover:text-white">Sign in</a>
     </div>
 
     </div>
     </nav>
 
     <!-----------------------Hero section------------------->
-    <section class=" flex flex-col justify-between md:flex-row items-center mt-10 ">
+    <section class=" flex flex-col justify-between md:flex-row items-center mt-10 relative ">
         <!--Intro----->
         <div class="flex flex-col space-y-12 items-start md:w-1/2">
             
@@ -136,42 +141,52 @@
     <div class="flex flex-col my-12 space-x-12 justify-between md:flex-row">
 
     <!-- Users -->
-    <div class="flex flex-col items-center space-y-7 flex-1">
+    <div class="flex flex-col items-center flex-1 relative">
 
         <!--  img -->
-        <img src="img/avatar-ali.png" width="70px" height="70px" alt="" class="rounded-full">
+        <img src="img/avatar-ali.png" width="70px" height="70px" alt="" class="rounded-full absolute">
 
-        <!-- name -->
-        <p class="font-bold" > Anisha khan </p>
+        <div class="flex flex-col items-center space-y-7 bg-veryLightGray mt-12 py-12 px-5">
+            <!-- name -->
+            <p class="font-bold" > Anisha khan </p>
 
-        <!-- Comment -->
-        <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur. A ut corrupti repudiandae assumenda </p>
+            <!-- Comment -->
+            <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur. A ut corrupti repudiandae assumenda </p>
+        </div>
+
+  
 
     </div>
 
-    <div class=" hidden md:flex flex-col items-center space-y-7 flex-1">
+    <div class=" hidden md:flex flex-col items-center flex-1 relative">
 
          <!--  img -->
-         <img src="img/avatar-richard.png" width="70px" height="70px" alt="" class="rounded-full">
+         <img src="img/avatar-richard.png" width="70px" height="70px" alt="" class="rounded-full absolute ">
 
+         <div class="flex flex-col items-center space-y-7 bg-veryLightGray py-12 mt-12 px-5">
          <!-- name -->
          <p class="font-bold" > Usman Click </p>
  
          <!-- Comment -->
          <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. tenetur. A ut corrupti repudiandae assumenda </p>
+         </div>
+
 
     </div>
 
-    <div class=" hidden md:flex flex-col items-center space-y-7 flex-1">
+    <div class=" hidden md:flex flex-col items-center flex-1 relative">
 
        <!--  img -->
-       <img src="img/avatar-anisha.png" width="70px" height="70px" alt="" class="rounded-full">
+       <img src="img/avatar-anisha.png" width="70px" height="70px" alt="" class="rounded-full absolute">
 
-       <!-- name -->
-       <p class="font-bold" > Alia Matt </p>
+       <div class="flex flex-col items-center space-y-7 bg-veryLightGray py-12 mt-12 px-5">
+            <!-- name -->
+            <p class="font-bold" > Alia Matt </p>
 
-       <!-- Comment -->
-       <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. tenetur. A ut corrupti repudiandae assumenda </p>
+            <!-- Comment -->
+            <p class=" text-sm text-center opacity-50" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. tenetur. A ut corrupti repudiandae assumenda </p>
+        </div>
+  
 
     </div>
 
@@ -188,13 +203,15 @@
 <footer>
 
     <!-- Newsletter -->
-    <div class="bg-brightRed py-14 mt-14">
+    <div class="bg-brightRed py-14 mt-14 relative">
+        <!-- bg img  -->
+        <img src="img/bg-simplify-section-desktop.svg" alt="" class=" hidden md:flex absolute bottom-0 ">
 
         <div class="flex flex-col items-center container mx-auto justify-between md:flex-row md:items-start">
             <!-- intro -->
-            <p class="text-4xl text-white font-bold mb-12 text-center md:text-start md:mb-0">Simplify how your team works today</p>
+            <p class="text-4xl text-white font-bold mb-12 text-center md:text-start relative md:mb-0">Simplify how your team works today</p>
             <!-- btn -->
-            <a href="#" class="bg-white rounded-full text-brightRed p-3 px-6" >Get started</a>
+            <a href="#" class="bg-white rounded-full text-brightRed p-3 px-6 relative" >Get started</a>
         </div>
 
     </div>
@@ -229,7 +246,10 @@
 
         </div>
 
+    
         <!-- links -->
+        <div class="flex flex-row justify-between md:space-x-20">
+      
         <div class="flex flex-col space-y-2 text-white">
             <a href="#" class="hover:text-brightRed">Home</a>
             <a href="#"class="hover:text-brightRed" >Pricing</a>
@@ -243,6 +263,8 @@
             <a href="#"class="hover:text-brightRed" >Policy</a>
         </div>
 
+    </div>
+
         <!-- Newsletter -->
         <div class="flex flex-col space-y-20">
 
@@ -250,7 +272,7 @@
 
                 <input type="text" name="" id="" class="bg-white flex-1 text-gray-700 rounded-full p-2 px-4">
 
-                <a href="#" class="bg-brightRed text-white rounded-full p-2 px-4 hover:bg-brightRed text-white ">
+                <a href="#" class="bg-brightRed text-white  rounded-full p-2 px-4 hover:bg-brightRed text-white ">
                     Go</a>
             </div>
 
